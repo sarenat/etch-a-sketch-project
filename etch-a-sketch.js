@@ -3,7 +3,7 @@ const body = document.querySelector("body");
 const newGridButton = document.createElement("button");
 newGridButton.textContent = "New Grid";
 newGridButton.addEventListener('click', () => {
-    const input = prompt("Enter your new grid size (max 100");
+    const input = prompt("Enter your new grid size (max 100)");
     generateGrid(input);
 })
 body.appendChild(newGridButton);
