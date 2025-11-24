@@ -1,0 +1,23 @@
+/* #container {
+
+} */
+
+#grid {
+    height: 1000px;
+    width: 1000px;
+    outline-style: solid;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+#row {
+    display: flex;
+    width: 100%;
+}
+#box {
+    outline-style: solid;
+    width: 100%;
+}
+#box:hover {
+    background-color: black;
+}
