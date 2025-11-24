@@ -3,7 +3,7 @@ const body = document.querySelector("body");
 const newGridButton = document.createElement("button");
 newGridButton.textContent = "New Grid";
 newGridButton.addEventListener('click', () => {
-    const input = prompt("Enter your new grid size (max 100)");
+    const input = prompt("Enter your new grid size (2-100)");
     generateGrid(input);
 })
 body.appendChild(newGridButton);
@@ -11,8 +11,8 @@ body.appendChild(newGridButton);
 const container = document.getElementById("container");
 
 function generateGrid(input) {
-    if (input>100) {
-        alert("That's more than 100, silly. Try again")
+    if (input<2 || input>100) {
+        alert("That's outside of the range, silly. Try again")
         return;
     }
 

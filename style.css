@@ -3,8 +3,8 @@
 } */
 
 #grid {
-    height: 1000px;
-    width: 1000px;
+    height: 500px;
+    width: 500px;
     outline-style: solid;
 
     display: flex;
@@ -15,7 +15,7 @@
     width: 100%;
 }
 #box {
-    outline-style: solid;
+    /* outline-style: solid; */
     width: 100%;
 }
 #box:hover {
